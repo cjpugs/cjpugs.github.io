@@ -19,10 +19,17 @@
 
     background-color: var(--green);
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header{
-    align-items: end;
+    display: flex;
+    align-items:stretch;
+    justify-content: space-between;
+
+    background-color: var(--darkgreen);
+    padding: 10px;
+    width: 100vw;
 }
 
 
@@ -43,14 +50,11 @@ a:active{
 }
 
 a{
-    border-width: 50px;
-    border: var(--lightyellow);
     margin: 10px;
-    color: var(--lightyellow);
-    
+    color: var(--yellow);
 }
 
 div{
-    color:var(--lightyellow); 
-    font-size: 30px;
+    font-size: 20px;
+    color: var(--yellow);
 }
