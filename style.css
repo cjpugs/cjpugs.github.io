@@ -1,9 +1,56 @@
-.purple{
-    color:violet;
-    font-size:50px;
+/* COLOR PALETTE
+* 
+* faded yellow: #e7e5c6
+* yellow: #ffe393
+* light green: #66876c
+* green: #4e6853
+* dark green: #3d4e41
+* 
+*/
+
+:root{
+    /*COLOR PALETTE*/
+    --lightyellow: #e7e5c6;
+    --yellow: #ffe393;
+    --lightgreen: #66876c;
+    --green: #4e6853;
+    --darkgreen: #3d4e41;
+    /* -------------------- */
+
+    background-color: var(--green);
+    text-align: center;
 }
 
-section {
-    color:blue;
-    font-size:50px;
+.header{
+    align-items: end;
+}
+
+
+a:link{
+
+}
+
+a:visited{
+
+}
+
+a:hover{
+
+}
+
+a:active{
+
+}
+
+a{
+    border-width: 50px;
+    border: var(--lightyellow);
+    margin: 10px;
+    color: var(--lightyellow);
+    
+}
+
+div{
+    color:var(--lightyellow); 
+    font-size: 30px;
 }
