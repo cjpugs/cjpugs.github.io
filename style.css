@@ -1,5 +1,9 @@
 .purple{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:violet;
-    font-size:10px;
+    font-size:50px;
+}
+
+section {
+    color:blue;
+    font-size:50px;
 }
