@@ -1,12 +1,24 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        div{color:green; font-size: 30px;}
+        .yellow{color:yellow;}
+    </style>
+
+    <script>
+        var color = "yellow";
+    </script>
 </head>
 
 <body>
     Hello world!
     <p className="purple">Some text</p>
     <section className="">Some text</section>
+    <div className="">Some text</div>
+    <p className="yellow">Some text</p>
+    <p className={color}>Some text</p>
     
 </body>
 </html>
