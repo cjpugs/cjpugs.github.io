@@ -7,9 +7,7 @@
         .yellow{color:yellow;}
     </style>
 
-    <script>
-        var color = "yellow";
-    </script>
+    
 </head>
 
 <body>
@@ -18,7 +16,15 @@
     <section class="">Some text</section>
     <div class="">Some text</div>
     <p class="yellow">Some text</p>
-    <p class={color}>Some text</p>
+    <p id="someid" class="">Some text</p>
+
+
+
+    <script type="text/javascript">
+        var color = "yellow";
+        document.getElementById("someid").className = color;
+
+    </script>
     
 </body>
 </html>
