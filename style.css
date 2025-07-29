@@ -45,9 +45,36 @@ body {
     width:100vw;
     background-color: var(--darkgreen);
 
+    padding-bottom:20px;
+
 
 }
 
+.contact-info-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-info-title-text{
+    color:var(--lightyellow);
+    font-size:20px;
+    margin:5px;
+}
+
+.contact-info-text{
+    color: var(--lightyellow);
+    font-size: 12px;
+}
+
+.contact-link-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-self: center;
+    align-items:center;
+    width:200px;
+}
 
 a:link{
 
@@ -71,14 +98,30 @@ a{
     text-decoration: none;
 }
 
+a.inline{
+    margin:0px;
+    color: #aad1bf;
+    text-decoration:underline;
+}
+
 div{
     font-size: 20px;
     color: var(--yellow);
 }
 
-hr{
+hr.section-divider{
     margin:0px;
     color: var(--lightyellow);
     height: 5px;
     background-color: var(--lightyellow);
+}
+
+hr.underline{
+    margin:0px;
+    margin-bottom:10px;
+    color: var(--lightyellow);
+    height: 1px;
+    width: 300px;
+    background-color: var(--lightyellow);
+    align-self:center;
 }
