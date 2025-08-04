@@ -24,7 +24,7 @@
 
 body {
     margin: 0px;
-    
+
     display:grid;
     grid-template-rows:auto 1fr auto;
     grid-template-columns:100%;
@@ -48,16 +48,29 @@ header{
     padding-top: 10px;
     width:100vw;
 
-    height: 100px;
-
 }
 
 div.header-container{
     display: flex;
-    align-items:stretch;
+    align-items:center;
     justify-content: space-between;
+
+    margin-left:auto;
+    margin-right:auto;
+
+    width:90vw;
+    height:70px;
     padding-bottom: 10px;
 }
+
+div.header-name{
+    font-size:30px;
+}
+
+nav{
+
+}
+
 /* ============================================================== */
 
 
@@ -122,16 +135,40 @@ a:active{
 
 }
 
-a{
-    margin: 10px;
-    color: var(--yellow);
-    text-decoration: none;
-}
+
 
 a.inline{
     margin:0px;
     color: #aad1bf;
     text-decoration:underline;
+}
+
+a.navlink{
+    margin: 10px;
+    color: var(--yellow);
+    text-decoration: none;
+    padding:2px;
+}
+
+a.navlink:hover{
+    border-radius:5px;
+    background-color: var(--green);
+}
+
+a.navlink-selected{
+    background-color: var(--yellow);
+    color: var(--darkgreen);
+    margin: 10px;
+    text-decoration:none;
+
+    padding:2px;
+    border-radius:5px;
+}
+
+a.navlink-selected:hover{
+    border-radius:5px;
+    background-color: var(--green);
+    color: var(--yellow);
 }
 /* ============================================================== */
 
