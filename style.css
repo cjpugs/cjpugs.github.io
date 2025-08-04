@@ -26,22 +26,29 @@ body {
     margin: 0px;
     
     display:grid;
-   grid-template-rows:auto 1fr auto;
-   grid-template-columns:100%;
+    grid-template-rows:auto 1fr auto;
+    grid-template-columns:100%;
+    
+    min-height:100vh;
 
-   min-height:100vh;
+}
 
+div{
+    font-size: 20px;
+    color: var(--yellow);
 }
 
 
-div.grid-container{
 
-}
+/* ============================================================== */
+/* Header */
 
 header{
     background-color: var(--darkgreen);
     padding-top: 10px;
     width:100vw;
+
+    height: 100px;
 
 }
 
@@ -51,7 +58,12 @@ div.header-container{
     justify-content: space-between;
     padding-bottom: 10px;
 }
+/* ============================================================== */
 
+
+
+/* ============================================================== */
+/* Footer  */
 footer{
 
     width:100vw;
@@ -86,7 +98,14 @@ footer{
     align-items:center;
     width:200px;
 }
+/* ============================================================== */
 
+
+
+
+
+/* ============================================================== */
+/* Links and Navigation */
 a:link{
 
 }
@@ -114,24 +133,17 @@ a.inline{
     color: #aad1bf;
     text-decoration:underline;
 }
-
-div{
-    font-size: 20px;
-    color: var(--yellow);
-}
+/* ============================================================== */
 
 
+
+/* ============================================================== */
+/* About Me */
 div.about-me-container{
-    background-color: var(--darkgreen);
-
-    border-color: var(--lightyellow);
-    border-style:solid;
-    border-width:5px;
-    border-radius:30px;
-
+    margin-top: 40px;
     margin-left:auto;
     margin-right:auto;
-    width:60vw;
+    width:70vw;
 
     min-height:300px;
     color:var(--lightyellow);
@@ -142,18 +154,40 @@ div.about-me-container{
 div.about-me-content{
     display: flex;
     align-items:stretch;
-    justify-content: space-between;
+    justify-content: center;
     padding:10px;
 }
 
 img.selfie{
 
-    border-color: var(--lightyellow);
+    border-color: var(--darkgreen);
     border-style:solid;
-    border-width:3px;
+    border-width:10px;
     border-radius:30px;
     aspect-ratio: 1104/1254
 }
+
+div.about-me-text{
+    color: var(--lightyellow);
+    width:600px;
+    margin-left: 30px;
+    padding:5px;
+    text-align:left;
+}
+
+p.my-title{
+    font-size:20px;
+    font-weight:bold;
+}
+p.my-story{
+    font-size:14px;
+    line-height:1.6;
+}
+/* ============================================================== */
+
+
+/* ============================================================== */
+/* Horizontal and Vertical Lines */
 
 hr.section-divider{
     margin:0px;
@@ -171,3 +205,4 @@ hr.underline{
     background-color: var(--lightyellow);
     align-self:center;
 }
+/* ============================================================== */
