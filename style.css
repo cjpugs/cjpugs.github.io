@@ -143,6 +143,10 @@ a.inline{
     text-decoration:underline;
 }
 
+a.inline:hover{
+    text-decoration:none;
+}
+
 a.navlink{
     margin: 10px;
     color: var(--yellow);
@@ -167,8 +171,7 @@ a.navlink-selected{
 
 a.navlink-selected:hover{
     border-radius:5px;
-    background-color: var(--green);
-    color: var(--yellow);
+    background-color: var(--lightyellow);
 }
 /* ============================================================== */
 
