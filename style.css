@@ -24,29 +24,40 @@
 
 body {
     margin: 0px;
+    
+    display:grid;
+   grid-template-rows:auto 1fr auto;
+   grid-template-columns:100%;
+
+   min-height:100vh;
+
 }
 
 
-.header{
-    display: flex;
-    align-items:stretch;
-    justify-content: space-between;
+div.grid-container{
 
+}
+
+header{
     background-color: var(--darkgreen);
     padding-top: 10px;
-    padding-bottom: 10px;
     width:100vw;
 
 }
 
-.footer{
-    position:fixed;
-    bottom: 0;
+div.header-container{
+    display: flex;
+    align-items:stretch;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+footer{
+
     width:100vw;
     background-color: var(--darkgreen);
 
     padding-bottom:20px;
-
 
 }
 
