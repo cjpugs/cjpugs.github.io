@@ -7,7 +7,7 @@ document.querySelectorAll("a.fade-link").forEach(link => {
                 overlay.classList.add("active");
                 setTimeout(() => {
                     window.location.href = href; // navigate after animation has played
-                }, 600); //match the time to the length of the animation
+                }, 300); //match the time to the length of the animation
             });
         });
 
