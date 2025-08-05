@@ -15,6 +15,7 @@
     --lightgreen: #66876c;
     --green: #4e6853;
     --darkgreen: #3d4e41;
+    --linkcolor:#95C7C4;
     /* -------------------- */
 
     background-color: var(--green);
@@ -146,6 +147,7 @@ footer{
     margin-top:10px;
     width:200px;
 }
+
 /* ============================================================== */
 
 
@@ -174,7 +176,7 @@ a:active{
 
 a.inline{
     margin:0px;
-    color: #aad1bf;
+    color: var(--linkcolor);
     text-decoration:underline;
 }
 
