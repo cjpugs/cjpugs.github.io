@@ -30,11 +30,3 @@ window.addEventListener("load", () => {
     const overlay = document.getElementById("transition-screen");
     overlay.classList.remove("active");
 });
-
-document.querySelectorAll("a.navlink").forEach(link =>{
-    link.addEventListener("click", function(e){
-        const clicked = e.target;
-
-        
-    });
-});
