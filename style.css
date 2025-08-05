@@ -91,13 +91,15 @@ div.header-container{
     margin-right:auto;
 
     width:90vw;
-    height:70px;
+    height:40px;
     padding-bottom: 10px;
+
 }
 
 div.header-name{
     font-size:30px;
 }
+
 
 /* nav{
 
@@ -141,6 +143,7 @@ footer{
     flex-direction: row;
     align-self: center;
     align-items:center;
+    margin-top:10px;
     width:200px;
 }
 /* ============================================================== */
@@ -179,11 +182,24 @@ a.inline:hover{
     text-decoration:none;
 }
 
-a.navlink{
+a.navlink-name{
     margin: 10px;
     color: var(--yellow);
     text-decoration: none;
     padding:2px;
+}
+
+a.navlink{
+    margin: 10px;
+    color: var(--yellow);
+    text-decoration: none;
+    padding:3px;
+    background-color: var(--darkgreen);
+    border-radius:5px;
+
+    transition-property:background-color;
+    transition-duration:0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 a.navlink:hover{
@@ -197,8 +213,12 @@ a.navlink-selected{
     margin: 10px;
     text-decoration:none;
 
-    padding:2px;
+    padding:3px;
     border-radius:5px;
+
+    transition-property:background-color;
+    transition-duration:0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 a.navlink-selected:hover{
