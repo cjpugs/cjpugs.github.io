@@ -63,7 +63,7 @@ div.transition-screen{
     height:100vh;
     z-index:100;
     pointer-events: none;
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     opacity:0;
