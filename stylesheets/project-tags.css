@@ -1,0 +1,59 @@
+/* COLOR PALETTE
+* 
+* faded yellow: #e7e5c6
+* yellow: #ffe393
+* light green: #66876c
+* green: #4e6853
+* dark green: #3d4e41
+* 
+*/
+
+:root{
+    /*COLOR PALETTE*/
+    --type-background:#ebd0f6;
+    --type-font:#63356d;
+
+    --role-background:#c5dcde;
+    --role-font:#1e54a1;
+
+    --tool-background:#fce79f;
+    --tool-font:#6d4e25;
+
+    --publisher-background:#ffc9ac;
+    --publisher-font:#723809;
+    /* -------------------- */
+}
+
+
+.tag{
+    height:auto;
+    width:fit-content;
+    font-size:16px;
+
+    padding:5px 8px;
+
+    margin:5px;
+
+    border-radius:5px;
+}
+
+.type-tag{
+    background-color:var(--type-background);
+    color:var(--type-font);
+}
+
+.role-tag{
+    background-color:var(--role-background);
+    color:var(--role-font);
+}
+
+.tool-tag{
+    background-color:var(--tool-background);
+    color:var(--tool-font);
+}
+
+.publisher-tag{
+    background-color:var(--publisher-background);
+    color:var(--publisher-font);
+}
+

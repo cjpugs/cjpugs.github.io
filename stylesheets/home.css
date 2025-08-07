@@ -88,3 +88,50 @@ img.project-header-image{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
+div.project-text-container{
+    margin: 10px;
+    margin-bottom:20px;
+}
+
+div.project-title-text{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+div.project-desc-text{
+    font-size: 18px;
+    color:var(--lightyellow);
+    line-height:1.3;
+}
+
+div.project-tag-container{
+    margin: 10px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+}
+
+div.view-more-container{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    margin-bottom: 40px;
+
+    
+}
+
+a.view-more-link{
+    color:var(--yellow);
+    text-decoration:none;
+
+    font-size:35px;
+
+    transition-property: color;
+    transition-duration:0.2s;
+}
+
+a.view-more-link:hover{
+    color:var(--lightyellow);
+}

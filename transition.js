@@ -13,6 +13,9 @@ document.querySelectorAll("a.fade-link").forEach(link => {
         if (clicked === document.getElementById("header-name-link")){
             console.log("home selected via title");
             document.getElementById("navlink-home").classList.add("navlink-selected");
+        } else if (clicked === document.getElementById("view-more-projects-link")){
+            console.log("projects selected via view more");
+            document.getElementById("navlink-projects").classList.add("navlink-selected");
         } else {
             console.log("navigating to new page");
             clicked.classList.add("navlink-selected");
