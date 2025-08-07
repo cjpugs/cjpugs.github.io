@@ -148,6 +148,36 @@ footer{
     width:200px;
 }
 
+
+a.icon-link{
+    width: 50px;
+    position:relative;
+}
+
+a.mail{
+    width:40px;
+    scale:1.1;
+}
+
+a.icon-link img{
+    width:100%;
+    height:100%;
+}
+
+img.top-link-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+    transition-property: opacity;
+    transition-duration: 0.1s;
+}
+
+img.top-link-icon:hover{
+    opacity:1;
+}
+
 /* ============================================================== */
 
 
