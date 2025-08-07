@@ -31,13 +31,3 @@ window.addEventListener("load", () => {
     overlay.classList.remove("active");
 });
 
-
-document.querySelectorAll("icon-link").forEach(link => {
-    link.addEventListener("hover", function(e) {
-        const target = e.target;
-        if (target === document.getElementById("mail-icon")){
-            target.src = "./assets/mail-hover.png";
-        }
-
-    });
-});

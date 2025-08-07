@@ -32,11 +32,12 @@ div.welcome-container{
     margin-top: 40px;
     margin-left:auto;
     margin-right:auto;
+
 }
 
 div.welcome-text{
     color: var(--lightyellow);
-    font-size:30px;
+    font-size:40px;
     margin-top:5px;
     margin-bottom:10px
 }
@@ -46,4 +47,44 @@ div.intro-text{
     font-size:18px;
     line-height: 1.2;
     margin-bottom:10px
+}
+
+div.project-catalogue-container{
+    width:70vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+    margin-top: 50px;
+
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+a.project-container-link{
+    text-decoration: none;
+    text-align:left;
+}
+
+div.project-container{
+    width: 325px;
+    height: 400px;
+    background-color: var(--lightgreen);
+    border-radius: 20px;
+    box-shadow: 7px 7px var(--darkgreen);
+
+    scale:1;
+    transition-property:scale;
+    transition-duration:0.2s;
+}
+
+div.project-container:hover{
+    scale:1.025
+}
+
+img.project-header-image{
+    width:325px;
+    height: 175px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
