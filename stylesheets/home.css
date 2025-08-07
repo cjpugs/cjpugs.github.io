@@ -1,0 +1,49 @@
+/* COLOR PALETTE
+* 
+* faded yellow: #e7e5c6
+* yellow: #ffe393
+* light green: #66876c
+* green: #4e6853
+* dark green: #3d4e41
+* 
+*/
+
+:root{
+    /*COLOR PALETTE*/
+    --lightyellow: #e7e5c6;
+    --yellow: #ffe393;
+    --lightgreen: #66876c;
+    --green: #4e6853;
+    --darkgreen: #3d4e41;
+    --linkcolor:#95C7C4;
+    /* -------------------- */
+}
+
+div.welcome-container{
+    width: 35vw;
+    background-color: var(--darkgreen);
+
+    border-style:solid;
+    border-radius:25px;
+    border-color:var(--lightyellow);
+    border-width:5px;
+
+    padding:20px;
+    margin-top: 40px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div.welcome-text{
+    color: var(--lightyellow);
+    font-size:30px;
+    margin-top:5px;
+    margin-bottom:10px
+}
+
+div.intro-text{
+    color: var(--lightyellow);
+    font-size:18px;
+    line-height: 1.2;
+    margin-bottom:10px
+}

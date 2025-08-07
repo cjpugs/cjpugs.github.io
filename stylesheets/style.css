@@ -8,6 +8,9 @@
 * 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
 :root{
     /*COLOR PALETTE*/
     --lightyellow: #e7e5c6;
@@ -20,7 +23,16 @@
 
     background-color: var(--green);
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Marmelad", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.alt-font{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -256,56 +268,6 @@ a.navlink-selected{
 a.navlink-selected:hover{
     border-radius:5px;
     background-color: var(--yellow);
-}
-/* ============================================================== */
-
-
-
-/* ============================================================== */
-/* About Me */
-div.about-me-container{
-    margin-top: 40px;
-    margin-left:auto;
-    margin-right:auto;
-    width:70vw;
-
-    min-height:300px;
-    color:var(--lightyellow);
-
-
-}
-
-div.about-me-content{
-    display: flex;
-    align-items:stretch;
-    justify-content: center;
-    padding:10px;
-}
-
-img.selfie{
-
-    border-color: var(--darkgreen);
-    border-style:solid;
-    border-width:10px;
-    border-radius:30px;
-    aspect-ratio: 1104/1254
-}
-
-div.about-me-text{
-    color: var(--lightyellow);
-    width:600px;
-    margin-left: 30px;
-    padding:5px;
-    text-align:left;
-}
-
-p.my-title{
-    font-size:20px;
-    font-weight:bold;
-}
-p.my-story{
-    font-size:14px;
-    line-height:1.6;
 }
 /* ============================================================== */
 

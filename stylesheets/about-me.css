@@ -1,0 +1,68 @@
+/* COLOR PALETTE
+* 
+* faded yellow: #e7e5c6
+* yellow: #ffe393
+* light green: #66876c
+* green: #4e6853
+* dark green: #3d4e41
+* 
+*/
+
+:root{
+    /*COLOR PALETTE*/
+    --lightyellow: #e7e5c6;
+    --yellow: #ffe393;
+    --lightgreen: #66876c;
+    --green: #4e6853;
+    --darkgreen: #3d4e41;
+    --linkcolor:#95C7C4;
+    /* -------------------- */
+}
+
+/* ============================================================== */
+/* About Me */
+div.about-me-container{
+    margin-top: 40px;
+    margin-left:auto;
+    margin-right:auto;
+    width:70vw;
+
+    min-height:300px;
+    color:var(--lightyellow);
+
+
+}
+
+div.about-me-content{
+    display: flex;
+    align-items:stretch;
+    justify-content: center;
+    padding:10px;
+}
+
+img.selfie{
+
+    border-color: var(--darkgreen);
+    border-style:solid;
+    border-width:10px;
+    border-radius:30px;
+    aspect-ratio: 1104/1254
+}
+
+div.about-me-text{
+    color: var(--lightyellow);
+    width:600px;
+    margin-left: 30px;
+    padding:5px;
+    text-align:left;
+}
+
+p.my-title{
+    font-size:20px;
+    font-weight:bold;
+}
+p.my-story{
+    font-size:14px;
+    line-height:1.6;
+}
+/* ============================================================== */
