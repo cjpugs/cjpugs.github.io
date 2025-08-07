@@ -1,0 +1,72 @@
+/* COLOR PALETTE
+* 
+* faded yellow: #e7e5c6
+* yellow: #ffe393
+* light green: #66876c
+* green: #4e6853
+* dark green: #3d4e41
+* 
+*/
+
+:root{
+    /*COLOR PALETTE*/
+    --lightyellow: #e7e5c6;
+    --yellow: #ffe393;
+    --lightgreen: #66876c;
+    --green: #4e6853;
+    --darkgreen: #3d4e41;
+    --linkcolor:#95C7C4;
+    /* -------------------- */
+}
+
+div.project-catalogue-container{
+    width:60vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+    margin-top: 50px;
+}
+
+div.project-container{
+    width: 100%;
+    height: 400px;
+    background-color: var(--lightgreen);
+    border-radius: 40px;
+
+    margin-top:50px;
+    margin-bottom:50px;
+
+    box-shadow: 7px 7px var(--darkgreen);
+
+    scale:1;
+    transition-property:scale;
+    transition-duration:0.2s;
+
+    display: grid;
+    grid-template-columns: 60% auto 40%;
+}
+
+div.project-container:hover{
+    scale:1.025;
+}
+
+
+div.divider{
+    display:flex;
+    align-items:center;
+}
+
+div.vert-line{
+    border-left:5px solid var(--lightyellow);
+    height:90%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+div.project-media-container{
+    
+}
+
+div.project-info-container{
+}
