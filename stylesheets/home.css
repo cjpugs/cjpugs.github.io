@@ -49,68 +49,7 @@ div.intro-text{
     margin-bottom:10px
 }
 
-div.project-catalogue-container{
-    width:70vw;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:20px;
-    margin-top: 50px;
 
-    display:flex;
-    justify-content: space-between;
-    
-}
-
-a.project-container-link{
-    text-decoration: none;
-    text-align:left;
-}
-
-div.project-container{
-    width: 325px;
-    height: 400px;
-    background-color: var(--lightgreen);
-    border-radius: 20px;
-    box-shadow: 7px 7px var(--darkgreen);
-
-    scale:1;
-    transition-property:scale;
-    transition-duration:0.2s;
-}
-
-div.project-container:hover{
-    scale:1.025
-}
-
-img.project-header-image{
-    width:325px;
-    height: 175px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-div.project-text-container{
-    margin: 10px;
-    margin-bottom:20px;
-}
-
-div.project-title-text{
-    font-size:22px;
-    margin-bottom:10px;
-}
-
-div.project-desc-text{
-    font-size: 18px;
-    color:var(--lightyellow);
-    line-height:1.3;
-}
-
-div.project-tag-container{
-    margin: 10px;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: flex-start;
-}
 
 div.view-more-container{
 
