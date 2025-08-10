@@ -145,15 +145,24 @@ div.project-info{
     margin-top:10px;
 
     font-size:18px;
-
+    color: var(--lightyellow);
 
     padding:10px;
 
     border-radius:15px;
 
     background-color: var(--green);
-    color: var(--lightyellow);
 
+}
+
+div.project-info-text{
+    font-size:18px;
+    color: var(--lightyellow);
+    line-height: 1.5;
+    margin-top:5px;
+    margin-bottom:5px;
+    padding-top:5px;
+    padding-bottom:10px;
 }
 
 ul.project-info-list{
