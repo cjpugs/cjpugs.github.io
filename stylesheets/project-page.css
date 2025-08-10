@@ -1,0 +1,106 @@
+/* COLOR PALETTE
+* 
+* faded yellow: #e7e5c6
+* yellow: #ffe393
+* light green: #66876c
+* green: #4e6853
+* dark green: #3d4e41
+* 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+:root{
+    /*COLOR PALETTE*/
+    --lightyellow: #e7e5c6;
+    --yellow: #ffe393;
+    --lightgreen: #66876c;
+    --green: #4e6853;
+    --darkgreen: #3d4e41;
+    --linkcolor:#95C7C4;
+    /* -------------------- */
+}
+
+div.project-body-container{
+    width: 60vw;
+    background-color: var(--lightgreen);
+
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+    border-width:7px;
+    border-color: var(--darkgreen);
+    border-style:solid;
+    padding: 10px;
+}
+
+div.project-name-container{
+    font-size: 50px;
+    margin: 10px;
+}
+
+
+div.project-media-container{
+    margin:20px;
+}
+
+img.project-media{
+    aspect-ratio:16/9;
+    width:70%;
+}
+
+
+div.project-overview-container{
+    background-color: var(--green);
+    width: 80%;
+    border-radius: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display:grid;
+    grid-template-columns: 60% 40%;
+    padding: 10px;
+
+}
+
+div.overview-info-container{
+    padding:5px;
+    text-align: left;
+    color: var(--lightyellow);
+    font-size:18px;
+}
+
+div.overview-tag{
+    color:var(--yellow);
+    font-size:20px;
+}
+
+
+div.view-more-container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+
+    
+}
+
+a.view-more-link{
+    color:var(--yellow);
+    text-decoration:none;
+
+    font-size:35px;
+
+    transition-property: color;
+    transition-duration:0.2s;
+}
+
+a.view-more-link:hover{
+    color:var(--lightyellow);
+}

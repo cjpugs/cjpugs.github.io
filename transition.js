@@ -7,8 +7,11 @@ document.querySelectorAll("a.fade-link").forEach(link => {
         const clicked = e.target;
 
         const selectedElement = document.getElementsByClassName("navlink-selected")[0];
-        selectedElement.classList.remove("navlink-selected");
-        selectedElement.classList.add("navlink");
+        if (selectedElement != null){
+            selectedElement.classList.remove("navlink-selected");
+            selectedElement.classList.add("navlink");
+        }
+        
 
         if (clicked === document.getElementById("header-name-link")){
             console.log("home selected via title");
