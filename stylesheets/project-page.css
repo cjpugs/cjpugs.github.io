@@ -83,6 +83,47 @@ div.overview-tag{
 }
 
 
+
+div.project-links-container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    width:70%;
+
+}
+
+a.link-container{
+    text-decoration: none;    
+}
+
+div.project-link{
+    width:fit-content;
+    padding:10px;
+
+    background-color: var(--green);
+    color: var(--lightyellow);
+    font-size: 18px;
+    
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: var(--lightyellow);
+    border-style:solid;
+
+
+    scale:1;
+    transition-property:scale;
+    transition-duration:0.2s;
+}
+
+div.project-link:hover{
+    scale:1.025;
+}
+
 div.view-more-container{
     margin-left: auto;
     margin-right: auto;

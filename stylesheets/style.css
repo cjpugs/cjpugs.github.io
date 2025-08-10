@@ -190,6 +190,13 @@ img.top-link-icon:hover{
     opacity:1;
 }
 
+div.website-ownership{
+    font-size:12px;
+    color: var(--lightyellow);
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
 /* ============================================================== */
 
 
