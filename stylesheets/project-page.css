@@ -124,6 +124,57 @@ div.project-link:hover{
     scale:1.025;
 }
 
+
+div.project-info-container{
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    margin-bottom: 30px;
+
+    color: var(--yellow);
+    font-size: 25px;
+
+    text-align:left;
+}
+
+div.project-info{
+    width: 95%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+
+    font-size:18px;
+
+
+    padding:10px;
+
+    border-radius:15px;
+
+    background-color: var(--green);
+    color: var(--lightyellow);
+
+}
+
+ul.project-info-list{
+    margin-top:0px;
+    margin-bottom:0px;
+
+    list-style-type:disc;
+    list-style-position: outside;
+}
+
+ul.project-info-list > li{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+
+
+
+
+
+/* VIEW MORE CONTAINER (Copied from home.css) */
 div.view-more-container{
     margin-left: auto;
     margin-right: auto;
