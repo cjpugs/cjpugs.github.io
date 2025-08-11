@@ -51,6 +51,11 @@ div.project-media-container{
 .project-media{
     aspect-ratio:16/9;
     width:70%;
+
+    border-radius:10px;
+    border-color:var(--darkgreen);
+    border-width:7px;
+    border-style:solid;
 }
 
 div.project-media-text{
