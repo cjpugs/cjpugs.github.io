@@ -2,6 +2,8 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/project-page.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/slideshow.css">
+
 
     <style>
         
@@ -41,7 +43,33 @@
                 </div>
 
                 <div class="project-media-container">
-                    <img class="project-media" src="../assets/minesweeper/Main menu.JPG">
+                    <div class="slideshow-container" style="width:80%;">
+                        <img id="prev-button" class="arrow-button" src="../assets/arrow.png">
+                        <img id="next-button" class="arrow-button" src="../assets/arrow.png">
+                        <div class="slideshow-images">
+                            <img src="../assets/minesweeper/Halloween-Settings-Menu.JPG" id="last-clone">
+
+                            <img src="../assets/minesweeper/Main-menu.JPG">
+                            <img src="../assets/minesweeper/Dark-Mode-Gameplay.JPG">
+                            <img src="../assets/minesweeper/Halloween-Score-Board.JPG">
+                            <img src="../assets/minesweeper/Spring-Inverse-Gameplay.JPG">
+                            <img src="../assets/minesweeper/Minesweeper-Gameplay-1.JPG">
+                            <img src="../assets/minesweeper/Custom-Menu.JPG">
+                            <img src="../assets/minesweeper/Halloween-Settings-Menu.JPG">
+
+                            <img src="../assets/minesweeper/Main-menu.JPG" id="first-clone">
+                        </div>
+                        <!-- The dots/circles -->
+                        <div class="dot-container">
+                            <span id="dot0" class="slideshow-dot" onclick=""></span>
+                            <span id="dot1" class="slideshow-dot" onclick=""></span>
+                            <span id="dot2" class="slideshow-dot" onclick=""></span>
+                            <span id="dot3" class="slideshow-dot" onclick=""></span>
+                            <span id="dot4" class="slideshow-dot" onclick=""></span>
+                            <span id="dot5" class="slideshow-dot" onclick=""></span>
+                            <span id="dot6" class="slideshow-dot" onclick=""></span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="project-links-container">
@@ -127,6 +155,8 @@
 
     <div id="transition-screen" class="transition-screen fade-in active"></div>
     <script src="../scripts/transition.js"></script>
+    <script src="../scripts/slideshow.js"></script>
+
         
 </body>
 
