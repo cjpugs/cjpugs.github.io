@@ -1,0 +1,80 @@
+/* COLOR PALETTE
+* 
+* faded yellow: #e7e5c6
+* yellow: #ffe393
+* light green: #66876c
+* green: #4e6853
+* dark green: #3d4e41
+* 
+*/
+
+:root{
+    /*COLOR PALETTE*/
+    --lightyellow: #e7e5c6;
+    --yellow: #ffe393;
+    --lightgreen: #66876c;
+    --green: #4e6853;
+    --darkgreen: #3d4e41;
+    --linkcolor:#95C7C4;
+    /* -------------------- */
+}
+
+div.slideshow-container{
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--darkgreen);
+    border-radius: 10px;
+
+    overflow:hidden;
+
+    position:relative;
+}
+
+div.slideshow-images{
+    display:flex;
+    width:100%;
+    height:300px;
+}
+
+#prev-button{
+    position:absolute;
+    top:45%;
+    left:3%;
+    z-index:5;
+    cursor:pointer;
+    rotate:180deg;
+
+    aspect-ratio:1/1;
+    width:30px;
+}
+
+#next-button{
+    position:absolute;
+    top:45%;
+    right:3%;
+    z-index:5;
+    cursor:pointer;
+
+    aspect-ratio:1/1;
+    width:30px;
+}
+
+/* The dots/bullets/indicators */
+.slideshow-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--lightgreen);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .slideshow-dot:hover {
+  background-color: var(--lightyellow);
+}
