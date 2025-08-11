@@ -19,8 +19,10 @@
     /* -------------------- */
 }
 
+
+/* Entire container (contains the slideshow, arrows, and dots) */
 div.slideshow-container{
-    width:60%;
+    width:40%;
     margin-left:auto;
     margin-right:auto;
 
@@ -34,12 +36,22 @@ div.slideshow-container{
     position:relative;
 }
 
+/* Contains just the slideshow images */
 div.slideshow-images{
     display:flex;
-    width:100%;
-    height:300px;
+    aspect-ratio:16/9;
 }
 
+/* Each individual slide */
+div.slideshow-images > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: block;
+
+}
+
+/* Arrow buttons */
 #prev-button{
     position:absolute;
     top:45%;
