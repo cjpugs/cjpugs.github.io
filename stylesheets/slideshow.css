@@ -27,10 +27,10 @@ div.slideshow-container{
     margin-left:auto;
     margin-right:auto;
 
-    border-width: 5px;
+    border-width: 7px;
     border-style: solid;
     border-color: var(--darkgreen);
-    border-radius: 10px;
+    border-radius: 20px;
 
     overflow:hidden;
     position:relative;
@@ -60,7 +60,7 @@ div.slideshow-images > img{
 /* Arrow buttons */
 #prev-button{
     position:absolute;
-    top:45%;
+    bottom:2%;
     left:3%;
     z-index:5;
     cursor:pointer;
@@ -72,7 +72,7 @@ div.slideshow-images > img{
 
 #next-button{
     position:absolute;
-    top:45%;
+    bottom:2%;
     right:3%;
     z-index:5;
     cursor:pointer;
@@ -86,6 +86,7 @@ div.slideshow-images > img{
 .dot-container{
     text-align:center;
     margin-top:10px;
+    margin-bottom:10px;
 }
 
 .slideshow-dot {
