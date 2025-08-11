@@ -48,11 +48,23 @@ div.project-media-container{
     margin:20px;
 }
 
-img.project-media{
+.project-media{
     aspect-ratio:16/9;
     width:70%;
 }
 
+div.project-media-text{
+    width:70%;
+
+    margin-left:auto;
+    margin-right:auto;
+
+    margin-top:10px;
+
+    text-align:left;
+    color: var(--yellow);
+    font-size:30px;
+}
 
 div.project-overview-container{
     background-color: var(--green);

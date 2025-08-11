@@ -32,6 +32,8 @@ div.slideshow-container{
     border-color: var(--darkgreen);
     border-radius: 20px;
 
+    background-color: var(--green);
+
     overflow:hidden;
     position:relative;
 }

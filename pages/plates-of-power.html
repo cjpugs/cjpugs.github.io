@@ -2,6 +2,9 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/project-page.css">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/slideshow.css">
+
+    
 
     <style>
         
@@ -41,7 +44,10 @@
                 </div>
 
                 <div class="project-media-container">
-                    <img class="project-media" src="../assets/plates-of-power/PoP-Menu.png">
+                    <div class="project-media-text">Trailer</div>
+                    <video class="project-media" controls>
+                        <source src="../assets/plates-of-power/Plates-Of-Power-Trailer.mp4" type="video/mp4">
+                    </video>
                 </div>
 
                 <div class="project-links-container">
@@ -56,6 +62,30 @@
                             In Plates of Power, Ale Zardoya returns home after many years away to find her sister, Natalia, missing. 
                             Ale must embrace the role of Champion to find her, while reconnecting with her estranged family and friends. 
                         </div>
+                    </div>
+                </div>
+
+                <div class="slideshow-container" style="width:80%">
+                    <img id="prev-button" class="arrow-button" src="../assets/arrow.png">
+                    <img id="next-button" class="arrow-button" src="../assets/arrow.png">
+                    <div class="slideshow-images">
+                        <img src="../assets/plates-of-power/PoP-Isa.png" id="last-clone">
+
+                        <img src="../assets/plates-of-power/PoP-Ale.png">
+                        <img src="../assets/plates-of-power/PoP-Arturo.png">
+                        <img src="../assets/plates-of-power/PoP-Berto.png">
+                        <img src="../assets/plates-of-power/PoP-Emilio.png">
+                        <img src="../assets/plates-of-power/PoP-Isa.png">
+
+                        <img src="../assets/plates-of-power/PoP-Ale.png" id="first-clone">
+                    </div>
+                    <!-- The dots/circles -->
+                    <div class="dot-container">
+                        <span id="dot0" class="slideshow-dot" onclick=""></span>
+                        <span id="dot1" class="slideshow-dot" onclick=""></span>
+                        <span id="dot2" class="slideshow-dot" onclick=""></span>
+                        <span id="dot3" class="slideshow-dot" onclick=""></span>
+                        <span id="dot4" class="slideshow-dot" onclick=""></span>
                     </div>
                 </div>
 
@@ -130,6 +160,7 @@
 
     <div id="transition-screen" class="transition-screen fade-in active"></div>
     <script src="../scripts/transition.js"></script>
+    <script src="../scripts/slideshow.js"></script>
         
 </body>
 
