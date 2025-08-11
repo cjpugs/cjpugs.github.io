@@ -11,7 +11,7 @@ const nextButton = document.querySelector("#next-button");
 
 //Counter
 let counter = 1;
-let size = slideshow.clientWidth;
+const size = slideshow.clientWidth;
 
 // Start the slidshow at the first image (not the clone)
 slideshow.style.transform = "translateX(" + (-size * counter) + "px)";
