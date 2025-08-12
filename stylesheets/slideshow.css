@@ -39,43 +39,49 @@ div.slideshow-container{
 }
 
 /* Contains just the slideshow images */
-div.slideshow-images{
+div.slideshow-slides{
     width:100%;
     display:flex;
     aspect-ratio:16/9;
 }
 
-/* Each individual slide */
-div.slideshow-images > img{
-    min-width:100%;
+div.single-slide{
+    width:100%;
+    height:100%;
+    flex-shrink:0;
+    display:block;
+
+    aspect-ratio: 16/9;
+    background-color: var(--darkgreen);
+}
+
+div.single-slide > img{
     width: 100%;
     height: 100%;
 
     object-fit: contain; 
     flex-shrink: 0;
-    display:block;
 
     aspect-ratio: 16/9;
-    background-color: blue;
 }
+
+div.slide-caption{
+    margin:auto;
+}
+
 
 /* Arrow buttons */
 #prev-button{
-    position:absolute;
-    bottom:2%;
-    left:3%;
     z-index:5;
     cursor:pointer;
     rotate:180deg;
 
     aspect-ratio:1/1;
     width:30px;
+
 }
 
 #next-button{
-    position:absolute;
-    bottom:2%;
-    right:3%;
     z-index:5;
     cursor:pointer;
 
@@ -84,13 +90,6 @@ div.slideshow-images > img{
 }
 
 /* The dots/bullets/indicators */
-
-.dot-container{
-    text-align:center;
-    margin-top:10px;
-    margin-bottom:10px;
-}
-
 .slideshow-dot {
   cursor: pointer;
   height: 15px;
@@ -104,4 +103,25 @@ div.slideshow-images > img{
 
 .active, .slideshow-dot:hover {
   background-color: var(--lightyellow);
+}
+
+
+
+div.slideshow-nav-container{
+    width:95%;
+
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+
+    display:flex;
+    justify-content: space-between;
+}
+
+.captions-active{
+    margin-top:40px;
+}
+
+.captions-inactive{
+    margin-top:10px;
 }

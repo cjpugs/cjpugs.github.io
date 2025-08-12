@@ -1,8 +1,8 @@
 //TUTORIAL:  https://www.youtube.com/watch?v=KcdBOoK3Pfw
 
 //retrieve html elements
-const slideshow = document.querySelector(".slideshow-images");
-const images = document.querySelectorAll(".slideshow-images img");
+const slideshow = document.querySelector(".slideshow-slides");
+const slides = document.querySelectorAll(".single-slide");
 const dots = document.querySelectorAll(".slideshow-dot");
 
 //Buttons
@@ -22,7 +22,7 @@ dots[0].classList.add("active");
 //Button listeners
 nextButton.addEventListener("click", ()=>{
     // if the counter will go out of bounds, return
-    if (counter >= images.length - 1) return;
+    if (counter >= slides.length - 1) return;
 
     // set transition style
     slideshow.style.transition = "transform 0.4s ease-in-out";
@@ -37,7 +37,7 @@ nextButton.addEventListener("click", ()=>{
     slideshow.style.transform = "translateX(" + (-size * counter) + "px)";
 
     // check if this is a wraparound change, and then update the active dot
-    if (counter == images.length-1){
+    if (counter == slides.length-1){
         dots[0].classList.add("active");
     } else {
         dots[counter-1].classList.add("active");
@@ -65,24 +65,24 @@ prevButton.addEventListener("click", ()=>{
 // Wrap-around logic
 slideshow.addEventListener("transitionend", ()=>{
     // if the image is "last clone" that means that it needs to wrap around to the back of the slideshow
-    if (images[counter].id === "last-clone"){
+    if (slides[counter].id === "last-clone"){
         // set transition to none
         slideshow.style.transition = "none";
 
         // set counter
-        counter = images.length - 2;
+        counter = slides.length - 2;
 
         // teleport!
         slideshow.style.transform = "translateX(" + (-size * counter) + "px)";
     }
 
     // if the image is "first-clone" that means that it needs to wrap around to the front of the slideshow
-    if (images[counter].id === "first-clone"){
+    if (slides[counter].id === "first-clone"){
         // set transition to none
         slideshow.style.transition = "none";
 
         // set counter
-        counter = images.length - counter;
+        counter = slides.length - counter;
 
         // teleport!
         slideshow.style.transform = "translateX(" + (-size * counter) + "px)";
