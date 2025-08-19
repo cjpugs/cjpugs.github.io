@@ -112,6 +112,9 @@ div.project-links-container{
     flex-wrap:wrap;
     width:70%;
 
+    align-items:center;
+    color: var(--lightyellow);
+
 }
 
 a.link-container{
