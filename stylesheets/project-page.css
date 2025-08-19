@@ -118,7 +118,8 @@ div.project-links-container{
 }
 
 a.link-container{
-    text-decoration: none;    
+    text-decoration: none;
+    width:30%;    
 }
 
 div.project-link{
