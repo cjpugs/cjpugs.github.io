@@ -171,6 +171,7 @@ a.icon-link{
 a.mail{
     width:40px;
     scale:1.2;
+    aspect-ratio: 891/721;
 }
 
 a.icon-link img{
