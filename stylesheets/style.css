@@ -200,6 +200,13 @@ div.website-ownership{
     margin-bottom:10px;
 }
 
+div.icon-attribution{
+    font-size:11px;
+    color: var(--lightyellow);
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
 /* ============================================================== */
 
 
