@@ -65,3 +65,90 @@ p.my-story{
     line-height:1.6;
 }
 /* ============================================================== */
+
+
+div.skills-and-awards-container{
+    width:80%;
+    display:flex;
+    justify-content:space-between;
+    margin: 20px auto;
+
+}
+
+div.skills-and-awards-column{
+    text-align:left;
+    width:48%;
+
+    font-size:24px;
+}
+
+hr.skills-and-awards-divider{
+    margin:10px auto;    
+    color: var(--lightyellow);
+    height: 2px;
+    width: 100%;
+    background-color: var(--lightyellow);
+
+}
+
+div.skills-content{
+    background-color: var(--darkgreen);
+    border-radius:15px;
+    margin:10px auto;
+    width:90%;
+
+    color:var(--lightyellow);
+    font-size:18px;
+
+    display:flex;
+    justify-content:space-evenly;
+}
+
+div.awards-content{
+    background-color: var(--darkgreen);
+    border-radius:15px;
+
+    margin:10px auto;
+    width:90%;
+    color:var(--lightyellow);
+    
+    font-size:18px;
+}
+
+
+ul.skills-list{
+    list-style-type:none;
+    /* background-color: purple; */
+    width:70%;
+    margin:0;
+    padding:0;
+
+    display:grid;
+    grid-template-columns: 50% 50%;
+    column-gap:10%;
+
+}
+
+ul.awards-list{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    text-align:left;
+
+}
+
+li.skills-list-item{
+    /* background-color: blue; */
+    margin: 10px auto;
+    width:100%;
+    text-align:left;
+}
+
+li.awards-list-item{
+    margin: 10px auto;
+    width:70%;
+}
