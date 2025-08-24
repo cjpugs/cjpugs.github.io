@@ -121,6 +121,10 @@ a.link-container{
     text-decoration: none;
     width:30%;    
 }
+a.link-container-long{
+    text-decoration: none;
+    width:50%;    
+}
 
 div.project-link{
     width:fit-content;
@@ -200,6 +204,21 @@ ul.project-info-list > li{
 }
 
 
+img.pop-pipeline{
+    display:block;
+    width:70%;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left:auto;
+    margin-right:auto;
+    aspect-ratio: 96/54;
+
+    border-radius:15px;
+    border-width:5px;
+    border-color:var(--darkgreen);
+    border-style: solid;
+
+}
 
 
 
