@@ -45,7 +45,7 @@ div.project-name-container{
 
 
 div.project-media-container{
-    margin:20px;
+    margin:auto;
 }
 
 .project-media{
@@ -110,7 +110,7 @@ div.project-links-container{
     display:flex;
     justify-content:space-evenly;
     flex-wrap:wrap;
-    width:70%;
+    width:80%;
 
     align-items:center;
     color: var(--lightyellow);
@@ -120,10 +120,6 @@ div.project-links-container{
 a.link-container{
     text-decoration: none;
     width:30%;    
-}
-a.link-container-long{
-    text-decoration: none;
-    width:50%;    
 }
 
 div.project-link{
