@@ -200,6 +200,26 @@ ul.project-info-list > li{
 }
 
 
+
+div.song-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    margin: 10px;
+}
+
+audio.song-player{
+    border-radius: 200px;
+    border-width: 5px;
+    border-color: var(--darkgreen);
+    border-style:solid;
+
+    margin: 10px;
+}
+
+
+/* Plates of Power specific */
 img.pop-pipeline{
     display:block;
     width:70%;
@@ -215,9 +235,6 @@ img.pop-pipeline{
     border-style: solid;
 
 }
-
-
-
 
 /* VIEW MORE CONTAINER (Copied from home.css) */
 div.view-more-container{
