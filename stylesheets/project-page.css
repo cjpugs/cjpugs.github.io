@@ -273,3 +273,50 @@ a.view-more-link{
 a.view-more-link:hover{
     color:var(--lightyellow);
 }
+
+
+/* ======================================= */
+/* Back button */
+
+
+a.back-button-image-container{
+    width: 30px;
+    position:relative;
+    aspect-ratio: 1/1;
+
+    margin:10px;
+
+    padding:12px;
+    background-color: var(--green);
+    color: var(--lightyellow);
+    
+    border-radius: 15px;
+
+}
+
+a.back-button-image-container img{
+    width:100%;
+    height:100%;
+    rotate:180deg;
+}
+
+img.back-button-image-top{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+    transition-property: opacity;
+    transition-duration: 0.1s;
+}
+
+img.back-button-image-top:hover{
+    opacity:1;
+}
+
+
+div.project-header-container{
+    display:grid;
+    grid-template-columns: 25% 50% 25%;
+}
