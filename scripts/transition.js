@@ -1,4 +1,12 @@
+window.addEventListener("pageshow", (e) => {
+    console.log("pageshow fired", e.persisted);
 
+    const overlay = document.getElementById("transition-screen");
+    console.log(overlay.className);
+
+    overlay.classList.remove("active");
+    console.log(overlay.className);
+});
 
 
 document.querySelectorAll("a.fade-link").forEach(link => {
@@ -9,15 +17,15 @@ document.querySelectorAll("a.fade-link").forEach(link => {
 
         const clicked = e.target;
 
+
+        // If the current page is one of the pages listed in the navbar (and is thus 'selected')
+        // Then, grab that element, remove 'navlink-selected' and add 'navlink'
         const selectedElement = document.getElementsByClassName("navlink-selected")[0];
 
-        // Potential bug area: if the user selects back button... then no link should be selected, right?
         if (selectedElement != null){
             selectedElement.classList.remove("navlink-selected");
             selectedElement.classList.add("navlink");
-        } else {
-            console.log("Selected element null");
-        }
+        } 
         
 
         if (clicked === document.getElementById("header-name-link")){
@@ -39,12 +47,3 @@ document.querySelectorAll("a.fade-link").forEach(link => {
     });
 });
 
-window.addEventListener("pageshow", (e) => {
-    console.log("pageshow fired", e.persisted);
-
-    const overlay = document.getElementById("transition-screen");
-    console.log(overlay.className);
-
-    overlay.classList.remove("active");
-    console.log(overlay.className);
-});
