@@ -35,9 +35,14 @@ document.querySelectorAll("a.fade-link").forEach(link => {
 });
 
 // !!! Potential bug area, what if the event is not "load" ?
-window.addEventListener("pageshow", () => {
+window.addEventListener("pageshow", (e) => {
+    console.log("pageshow fired", e.persisted);
+
     const overlay = document.getElementById("transition-screen");
+    console.log(overlay.className);
+
     overlay.classList.remove("active");
+    console.log(overlay.className);
 });
 
 // window.addEventListener("popstate", () =>{
