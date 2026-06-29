@@ -42,7 +42,7 @@ document.querySelectorAll("a.fade-link").forEach(link => {
             document.getElementById("navlink-projects").classList.add("navlink-selected");
         } else {
             console.log("navigating to new page");
-            // clicked.classList.add("navlink-selected");
+            clicked.classList.add("navlink-selected");
         }
 
 
