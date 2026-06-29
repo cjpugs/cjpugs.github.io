@@ -1,14 +1,14 @@
 console.log("transition.js loaded");
 
-// window.addEventListener("pageshow", (e) => {
-//     console.log("pageshow fired", e.persisted);
+window.addEventListener("pageshow", (e) => {
+    console.log("pageshow fired", e.persisted);
 
-//     const overlay = document.getElementById("transition-screen");
-//     console.log(overlay.className);
+    const overlay = document.getElementById("transition-screen");
+    console.log(overlay.className);
 
-//     overlay.classList.remove("active");
-//     console.log(overlay.className);
-// });
+    overlay.classList.remove("active");
+    console.log(overlay.className);
+});
 window.addEventListener("load", () => {
     console.log("load");
 });
