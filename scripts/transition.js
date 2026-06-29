@@ -16,6 +16,10 @@ document.querySelectorAll("a.fade-link").forEach(link => {
         const href = this.getAttribute("href");
 
         const clicked = e.target;
+        console.log("Clicked on: ", clicked)
+        if (clicked == null){
+            console.log("Clicked was null")
+        }
 
 
         // If the current page is one of the pages listed in the navbar (and is thus 'selected')
