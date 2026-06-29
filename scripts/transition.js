@@ -1,11 +1,11 @@
 window.addEventListener("pageshow", (e) => {
-    console.log("pageshow fired", e.persisted);
+    // console.log("pageshow fired", e.persisted);
 
     const overlay = document.getElementById("transition-screen");
-    console.log(overlay.className);
+    // console.log(overlay.className);
 
     overlay.classList.remove("active");
-    console.log(overlay.className);
+    // console.log(overlay.className);
 });
 
 
@@ -27,10 +27,12 @@ document.querySelectorAll("a.fade-link").forEach(link => {
             selectedElement.classList.add("navlink");
         } 
         
-
+        //If the user clicked on my name in the top left corner
         if (clicked === document.getElementById("header-name-link")){
             console.log("home selected via title");
             document.getElementById("navlink-home").classList.add("navlink-selected");
+        
+        // if they clicked on "View More Projects" at the bottom of the home page
         } else if (clicked === document.getElementById("view-more-projects-link")){
             console.log("projects selected via view more");
             document.getElementById("navlink-projects").classList.add("navlink-selected");
