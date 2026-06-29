@@ -1,3 +1,4 @@
+console.log("transition.js loaded");
 document.querySelectorAll("a.fade-link").forEach(link => {
     link.addEventListener("click", function(e) {
         e.preventDefault();
@@ -33,6 +34,8 @@ document.querySelectorAll("a.fade-link").forEach(link => {
         }, 300); //match the time to the length of the animation
     });
 });
+
+console.log("finished registering click handlers");
 
 // !!! Potential bug area, what if the event is not "load" ?
 window.addEventListener("pageshow", (e) => {
