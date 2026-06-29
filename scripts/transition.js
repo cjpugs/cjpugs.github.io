@@ -1,16 +1,25 @@
 console.log("transition.js loaded");
 
-// !!! Potential bug area, what if the event is not "load" ?
-window.addEventListener("pageshow", (e) => {
-    console.log("pageshow fired", e.persisted);
+// window.addEventListener("pageshow", (e) => {
+//     console.log("pageshow fired", e.persisted);
 
-    const overlay = document.getElementById("transition-screen");
-    console.log(overlay.className);
+//     const overlay = document.getElementById("transition-screen");
+//     console.log(overlay.className);
 
-    overlay.classList.remove("active");
-    console.log(overlay.className);
+//     overlay.classList.remove("active");
+//     console.log(overlay.className);
+// });
+window.addEventListener("load", () => {
+    console.log("load");
 });
 
+window.addEventListener("pageshow", (e) => {
+    console.log("pageshow", e.persisted);
+});
+
+window.addEventListener("pagehide", (e) => {
+    console.log("pagehide", e.persisted);
+});
 document.querySelectorAll("a.fade-link").forEach(link => {
     link.addEventListener("click", function(e) {
         e.preventDefault();
@@ -48,10 +57,3 @@ document.querySelectorAll("a.fade-link").forEach(link => {
 });
 
 console.log("finished registering click handlers");
-
-
-
-// window.addEventListener("popstate", () =>{
-//     console.log("window history changed")
-// });
-
