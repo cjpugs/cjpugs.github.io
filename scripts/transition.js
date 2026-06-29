@@ -7,6 +7,8 @@ document.querySelectorAll("a.fade-link").forEach(link => {
         const clicked = e.target;
 
         const selectedElement = document.getElementsByClassName("navlink-selected")[0];
+
+        // Potential bug area: if the user selects back button... then no link should be selected, right?
         if (selectedElement != null){
             selectedElement.classList.remove("navlink-selected");
             selectedElement.classList.add("navlink");
@@ -32,8 +34,13 @@ document.querySelectorAll("a.fade-link").forEach(link => {
     });
 });
 
+// !!! Potential bug area, what if the event is not "load" ?
 window.addEventListener("load", () => {
     const overlay = document.getElementById("transition-screen");
     overlay.classList.remove("active");
+});
+
+window.addEventListener("popstate", () =>{
+    console.log("window history changed")
 });
 
