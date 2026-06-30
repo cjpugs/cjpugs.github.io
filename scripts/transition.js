@@ -1,6 +1,6 @@
 window.addEventListener("pageshow", (e) => {
     // console.log("pageshow fired", e.persisted);
-    navSelectedConsistency()
+    cleaner()
 
     const overlay = document.getElementById("transition-screen");
     // console.log(overlay.className);
@@ -84,5 +84,31 @@ function navSelectedConsistency(){
         // change the correct tag to navlink-selected
         toBeSelected.classList.remove("navlink");
         toBeSelected.classList.add("navlink-selected");
+    }
+}
+
+
+let IDs = new Map();
+IDs.set("navlink-home", "index.html");
+IDs.set("navlink-projects", "projects.html");
+IDs.set("navlink-about", "about.html");
+function cleaner(){
+    // Clear selection
+    for (let Element of document.getElementsByClassName("navlink-selected"))
+    {
+        Element.classList.replace("navlink-selected", "navlink");
+    }
+
+    // Re-select current page 
+    const pageName = window.location.pathname.split("/").pop();
+    for (let Element of document.getElementsByClassName("navlink"))
+    {
+        let Id = Element.id;
+        let IdDesiredSite = IDs.get(Id);
+        if (IdDesiredSite === pageName)
+        {
+            Element.classList.replace("navlink", "navlink-selected");
+            break;
+        }
     }
 }
