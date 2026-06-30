@@ -97,5 +97,7 @@ function navSelectedConsistency(){
     }
 
     // otherwise, everything should run as normal...?
+
+    // Nevermind. It works on chrome, and seemingly no other browser
     
 }
