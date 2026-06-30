@@ -122,12 +122,12 @@ function navSelectedConsistency2(){
     }
 
     const selectedElement = document.getElementsByClassName("navlink-selected")[0];
-    // if toBeSelected is not null, then our nav link highlights are out of sync
-    if (toBeSelected != null){
-        if (selectedElement != null){
+    if (selectedElement != null){
             selectedElement.classList.remove("navlink-selected");
             toBeSelected.classList.add("navlink");
-        }
+    }
+    // if toBeSelected is not null, then our nav link highlights are out of sync
+    if (toBeSelected != null){
         // change the correct tag to navlink-selected
         toBeSelected.classList.remove("navlink");
         toBeSelected.classList.add("navlink-selected");
