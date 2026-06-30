@@ -1,17 +1,6 @@
 window.addEventListener("pageshow", (e) => {
     // console.log("pageshow fired", e.persisted);
-    const pageName = window.location.pathname.split("/").pop();
-
-    let toBeSelected = null;
-    if (pageName === "index.html"){
-        toBeSelected = document.getElementById("navlink-home");
-    } else if (pageName === "projects.html") {
-        toBeSelected = document.getElementById("navlink-projects");
-    } else if (pageName === "about.html") {
-        toBeSelected = document.getElementById("navlink-about");
-    }
-    toBeSelected.classList.remove("navlink")
-    toBeSelected.classList.add("navlink-selected")
+    navSelectedConsistency()
 
     const overlay = document.getElementById("transition-screen");
     // console.log(overlay.className);
@@ -59,7 +48,7 @@ document.querySelectorAll("a.fade-link").forEach(link => {
 
         } else {
             console.log("navigating to new page");
-            // clicked.classList.add("navlink-selected");
+            clicked.classList.add("navlink-selected");
         }
 
 
@@ -70,3 +59,43 @@ document.querySelectorAll("a.fade-link").forEach(link => {
     });
 });
 
+// fucked up and evil method for ensuring the highlight in the navbar is consistent
+// Done this way because it would get out of sync if the user pressed the back button in the browser
+function navSelectedConsistency(){
+    // grab the current page name
+    const pageName = window.location.pathname.split("/").pop();
+
+    // identify the current element that is highlighted
+    const selectedElement = document.getElementsByClassName("navlink-selected")[0];
+    const selectedID = selectedElement.id;
+    // console.log ("Selected Element ID: ", selectedID)
+
+    // declare variable to use later. This will be the element that will be highlighted
+    let toBeSelected = null;
+
+    // if the page is Home and the selected ID is NOT home
+    if (pageName === "index.html" && selectedID !== "navlink-home"){
+        // declare toBeSelected as navlink-home
+        toBeSelected = document.getElementById("navlink-home");
+    
+    // rinse and repeat for the other two 
+    } else if (pageName === "projects.html" && selectedID !== "navlink-projects") {
+        toBeSelected = document.getElementById("navlink-projects");
+    } else if (pageName === "about.html" && selectedID !== "navlink-about") {
+        toBeSelected = document.getElementById("navlink-about");
+    }
+
+    // if toBeSelected is not null, then our nav link highlights are out of sync
+    if (toBeSelected != null){
+        // change the correct tag to navlink-selected
+        toBeSelected.classList.remove("navlink");
+        toBeSelected.classList.add("navlink-selected");
+
+        // remove navlink-selected from the incorrect tag
+        selectedElement.classList.remove("navlink-selected");
+        selectedElement.classList.add("navlink");
+    }
+
+    // otherwise, everything should run as normal...?
+    
+}
