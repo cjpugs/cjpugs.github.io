@@ -1,5 +1,17 @@
 window.addEventListener("pageshow", (e) => {
     // console.log("pageshow fired", e.persisted);
+    const pageName = window.location.pathname.split("/").pop();
+
+    let toBeSelected = null;
+    if (pageName === "index.html"){
+        toBeSelected = document.getElementById("navlink-home");
+    } else if (pageName === "projects.html") {
+        toBeSelected = document.getElementById("navlink-projects");
+    } else if (pageName === "about.html") {
+        toBeSelected = document.getElementById("navlink-about");
+    }
+    toBeSelected.classList.remove("navlink")
+    toBeSelected.classList.add("navlink-selected")
 
     const overlay = document.getElementById("transition-screen");
     // console.log(overlay.className);
@@ -8,6 +20,9 @@ window.addEventListener("pageshow", (e) => {
     // console.log(overlay.className);
 });
 
+window.addEventListener("popstate", (e) => {
+    console.log("Popstate triggered");
+});
 
 document.querySelectorAll("a.fade-link").forEach(link => {
     link.addEventListener("click", function(e) {
@@ -40,9 +55,11 @@ document.querySelectorAll("a.fade-link").forEach(link => {
         } else if (clicked === document.getElementById("view-more-projects-link")){
             console.log("projects selected via view more");
             document.getElementById("navlink-projects").classList.add("navlink-selected");
+        
+
         } else {
             console.log("navigating to new page");
-            clicked.classList.add("navlink-selected");
+            // clicked.classList.add("navlink-selected");
         }
 
 
