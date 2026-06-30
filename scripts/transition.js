@@ -1,6 +1,11 @@
+let IDs = new Map();
+IDs.set("navlink-home", "index.html");
+IDs.set("navlink-projects", "projects.html");
+IDs.set("navlink-about", "about.html");
+
 window.addEventListener("pageshow", (e) => {
     // console.log("pageshow fired", e.persisted);
-    cleaner()
+    navSelectedConsistency()
 
     const overlay = document.getElementById("transition-screen");
     // console.log(overlay.className);
@@ -57,42 +62,6 @@ document.querySelectorAll("a.fade-link").forEach(link => {
 });
 
 function navSelectedConsistency(){
-    // grab the current page name
-    const pageName = window.location.pathname.split("/").pop();
-
-    let toBeSelected = null;
-
-    // if the page is Home 
-    if (pageName === "index.html"){
-        // declare toBeSelected as navlink-home
-        toBeSelected = document.getElementById("navlink-home");
-    
-    // rinse and repeat for the other two 
-    } else if (pageName === "projects.html") {
-        toBeSelected = document.getElementById("navlink-projects");
-    } else if (pageName === "about.html") {
-        toBeSelected = document.getElementById("navlink-about");
-    }
-
-    const selectedElement = document.getElementsByClassName("navlink-selected")[0];
-    if (selectedElement != null){
-            selectedElement.classList.remove("navlink-selected");
-            toBeSelected.classList.add("navlink");
-    }
-    // if toBeSelected is not null, then our nav link highlights are out of sync
-    if (toBeSelected != null){
-        // change the correct tag to navlink-selected
-        toBeSelected.classList.remove("navlink");
-        toBeSelected.classList.add("navlink-selected");
-    }
-}
-
-
-let IDs = new Map();
-IDs.set("navlink-home", "index.html");
-IDs.set("navlink-projects", "projects.html");
-IDs.set("navlink-about", "about.html");
-function cleaner(){
     // Clear selection
     for (let Element of document.getElementsByClassName("navlink-selected"))
     {
