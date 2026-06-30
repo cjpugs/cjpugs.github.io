@@ -9,9 +9,6 @@ window.addEventListener("pageshow", (e) => {
     // console.log(overlay.className);
 });
 
-window.addEventListener("popstate", (e) => {
-    console.log("Popstate triggered");
-});
 
 document.querySelectorAll("a.fade-link").forEach(link => {
     link.addEventListener("click", function(e) {
