@@ -64,6 +64,9 @@ function navSelectedConsistency(){
 
     // identify the current element that is highlighted
     const selectedElement = document.getElementsByClassName("navlink-selected")[0];
+    if (selectedElement == null){
+        return;
+    }
     const selectedID = selectedElement.id;
     // console.log ("Selected Element ID: ", selectedID)
 
