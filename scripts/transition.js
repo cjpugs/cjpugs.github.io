@@ -109,7 +109,7 @@ function navSelectedConsistency2(){
 
     let toBeSelected = null;
 
-    // if the page is Home and the selected ID is NOT home
+    // if the page is Home 
     if (pageName === "index.html"){
         // declare toBeSelected as navlink-home
         toBeSelected = document.getElementById("navlink-home");
@@ -121,9 +121,9 @@ function navSelectedConsistency2(){
         toBeSelected = document.getElementById("navlink-about");
     }
 
+    const selectedElement = document.getElementsByClassName("navlink-selected")[0];
     // if toBeSelected is not null, then our nav link highlights are out of sync
     if (toBeSelected != null){
-        const selectedElement = document.getElementsByClassName("navlink-selected")[0];
         if (selectedElement != null){
             selectedElement.classList.remove("navlink-selected");
             toBeSelected.classList.add("navlink");
