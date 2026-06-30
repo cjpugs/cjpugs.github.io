@@ -1,6 +1,6 @@
 window.addEventListener("pageshow", (e) => {
     // console.log("pageshow fired", e.persisted);
-    navSelectedConsistency()
+    navSelectedConsistency2()
 
     const overlay = document.getElementById("transition-screen");
     // console.log(overlay.className);
@@ -100,4 +100,36 @@ function navSelectedConsistency(){
 
     // Nevermind. It works on chrome, and seemingly no other browser
     
+}
+
+
+function navSelectedConsistency2(){
+    // grab the current page name
+    const pageName = window.location.pathname.split("/").pop();
+
+    let toBeSelected = null;
+
+    // if the page is Home and the selected ID is NOT home
+    if (pageName === "index.html"){
+        // declare toBeSelected as navlink-home
+        toBeSelected = document.getElementById("navlink-home");
+    
+    // rinse and repeat for the other two 
+    } else if (pageName === "projects.html") {
+        toBeSelected = document.getElementById("navlink-projects");
+    } else if (pageName === "about.html") {
+        toBeSelected = document.getElementById("navlink-about");
+    }
+
+    // if toBeSelected is not null, then our nav link highlights are out of sync
+    if (toBeSelected != null){
+        const selectedElement = document.getElementsByClassName("navlink-selected")[0];
+        if (selectedElement != null){
+            selectedElement.classList.remove("navlink-selected");
+            toBeSelected.classList.add("navlink");
+        }
+        // change the correct tag to navlink-selected
+        toBeSelected.classList.remove("navlink");
+        toBeSelected.classList.add("navlink-selected");
+    }
 }
