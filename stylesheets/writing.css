@@ -1,0 +1,98 @@
+/* COLOR PALETTE
+* 
+* faded yellow: #e7e5c6
+* yellow: #ffe393
+* light green: #66876c
+* green: #4e6853
+* dark green: #3d4e41
+* 
+*/
+:root{
+    /*COLOR PALETTE*/
+    --lightyellow: #e7e5c6;
+    --yellow: #ffe393;
+    --lightgreen: #66876c;
+    --green: #4e6853;
+    --darkgreen: #3d4e41;
+    --linkcolor:#95C7C4;
+    /* -------------------- */
+}
+
+
+/* Contains the text at the top that says "Writing" */
+div.writing-header-text-container{
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:auto;
+    margin-right:auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.writing-header-text{
+    font-size: 35px;
+    margin-bottom:10px;
+}
+/* Underline under "Writing" */
+hr.title-underline{
+    margin:0px;
+    margin-bottom:10px;
+    color: var(--lightyellow);
+    height: 2px;
+    width: 200px;
+    background-color: var(--lightyellow);
+    align-self:center;
+}
+
+
+
+
+/* Contains all the projects */
+div.writing-catalogue-container{
+    width:70vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+/* Wraps the entire project tab in a link to go somewhere else */
+a.writing-container-link{
+    text-decoration: none;
+    text-align:left;
+}
+
+/* Contains all information regarding this single project tab*/
+div.writing-container{
+    width: 500px;
+    height: 250px;
+
+    display:grid;
+    grid-template-columns: 60% 2% 38%;
+
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+
+    background-color: var(--lightgreen);
+    border-radius: 20px;
+    box-shadow: 7px 7px var(--darkgreen);
+
+    scale:1;
+    transition-property:scale;
+    transition-duration:0.2s;
+}
+
+div.writing-container:hover{
+    scale:1.025
+}
+
+div.writing-vert-line{
+    border-left: 3px solid var(--lightyellow);
+    height: 80%;
+    margin: auto;
+}
