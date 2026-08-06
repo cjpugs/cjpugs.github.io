@@ -69,10 +69,10 @@ a.writing-container-link{
 /* Contains all information regarding this single project tab*/
 div.writing-container{
     width: 500px;
-    height: 250px;
+    height: 200px;
 
     display:grid;
-    grid-template-columns: 60% 2% 38%;
+    grid-template-columns: 65% 2% 33%;
 
     margin-right: 10px;
     margin-left: 10px;
@@ -82,17 +82,83 @@ div.writing-container{
     border-radius: 20px;
     box-shadow: 7px 7px var(--darkgreen);
 
-    scale:1;
-    transition-property:scale;
+    transition-property: transform;
     transition-duration:0.2s;
+    will-change: transform;
+    transform: scale(1) translateZ(0);
 }
 
 div.writing-container:hover{
-    scale:1.025
+    transform: scale(1.02) translateZ(0);
 }
 
 div.writing-vert-line{
     border-left: 3px solid var(--lightyellow);
     height: 80%;
     margin: auto;
+}
+
+div.writing-left-container{
+    margin: 10px;
+    margin-bottom:20px;
+}
+
+div.writing-right-container{
+    margin: 10px;
+    margin-bottom:20px;
+}
+
+
+
+/* Title, type, and description go on the left side of the project*/
+div.writing-title-text{
+    font-size:20px;
+}
+
+div.writing-type-text{
+    font-size: 16px;
+    color: var(--lightyellow);
+    font-style: italic;
+    margin-top: 2px;
+    margin-bottom:15px;
+    margin-left: 10px;
+}
+
+div.writing-desc-text{
+    font-size: 16px;
+    color:var(--lightyellow);
+    line-height:1.3;
+}
+
+
+/* Genre and Tools go on the right side of the project */
+
+div.writing-genre-container{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+div.writing-genre-label{
+    font-size: 18px;
+}
+
+div.writing-genre-text{
+    font-size: 16px;
+    color:var(--lightyellow);
+}
+
+
+
+div.writing-tools-container{
+    /* margin-top: 10px;
+    margin-bottom: 40px; */
+}
+
+div.writing-tools-label{
+    font-size: 18px;
+}
+
+div.writing-tools-text{
+    font-size: 16px;
+    color:var(--lightyellow);
 }

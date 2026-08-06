@@ -63,13 +63,14 @@ div.project-container{
     border-radius: 20px;
     box-shadow: 7px 7px var(--darkgreen);
 
-    scale:1;
-    transition-property:scale;
+    transform: scale(1) translateZ(0);
+    transition-property:transform;
     transition-duration:0.2s;
+    will-change: transform;
 }
 
 div.project-container:hover{
-    scale:1.025
+    transform: scale(1.02) translateZ(0);
 }
 
 img.project-header-image{
