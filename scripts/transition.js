@@ -1,6 +1,6 @@
 let IDs = new Map();
 IDs.set("navlink-home", "index.html");
-IDs.set("navlink-projects", "projects.html");
+IDs.set("navlink-writing", "writing.html");
 IDs.set("navlink-about", "about.html");
 
 window.addEventListener("pageshow", (e) => {

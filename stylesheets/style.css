@@ -170,7 +170,7 @@ a.icon-link{
 
 a.mail{
     width:40px;
-    scale:1.2;
+    transform: scale(1.2);
     aspect-ratio: 891/721;
 }
 
@@ -309,3 +309,15 @@ hr.underline{
     align-self:center;
 }
 /* ============================================================== */
+
+/* Declares any image with the id "page-img-background" to be fixed to the back of the screen and faded*/
+#page-img-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(70%);            
+}

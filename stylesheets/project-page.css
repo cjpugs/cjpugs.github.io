@@ -136,13 +136,14 @@ div.project-link{
     border-style:solid;
 
 
-    scale:1;
-    transition-property:scale;
+    transform: scale(1) translateZ(0);
+    transition-property:transform;
     transition-duration:0.2s;
+    will-change:transform
 }
 
 div.project-link:hover{
-    scale:1.025;
+    transform: scale(1.02) translateZ(0);
 }
 
 

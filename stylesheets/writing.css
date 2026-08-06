@@ -1,0 +1,164 @@
+/* COLOR PALETTE
+* 
+* faded yellow: #e7e5c6
+* yellow: #ffe393
+* light green: #66876c
+* green: #4e6853
+* dark green: #3d4e41
+* 
+*/
+:root{
+    /*COLOR PALETTE*/
+    --lightyellow: #e7e5c6;
+    --yellow: #ffe393;
+    --lightgreen: #66876c;
+    --green: #4e6853;
+    --darkgreen: #3d4e41;
+    --linkcolor:#95C7C4;
+    /* -------------------- */
+}
+
+
+/* Contains the text at the top that says "Writing" */
+div.writing-header-text-container{
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:auto;
+    margin-right:auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.writing-header-text{
+    font-size: 35px;
+    margin-bottom:10px;
+}
+/* Underline under "Writing" */
+hr.title-underline{
+    margin:0px;
+    margin-bottom:10px;
+    color: var(--lightyellow);
+    height: 2px;
+    width: 200px;
+    background-color: var(--lightyellow);
+    align-self:center;
+}
+
+
+
+
+/* Contains all the projects */
+div.writing-catalogue-container{
+    width:70vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+/* Wraps the entire project tab in a link to go somewhere else */
+a.writing-container-link{
+    text-decoration: none;
+    text-align:left;
+}
+
+/* Contains all information regarding this single project tab*/
+div.writing-container{
+    width: 500px;
+    height: 200px;
+
+    display:grid;
+    grid-template-columns: 65% 2% 33%;
+
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+
+    background-color: var(--lightgreen);
+    border-radius: 20px;
+    box-shadow: 7px 7px var(--darkgreen);
+
+    transition-property: transform;
+    transition-duration:0.2s;
+    will-change: transform;
+    transform: scale(1) translateZ(0);
+}
+
+div.writing-container:hover{
+    transform: scale(1.02) translateZ(0);
+}
+
+div.writing-vert-line{
+    border-left: 3px solid var(--lightyellow);
+    height: 80%;
+    margin: auto;
+}
+
+div.writing-left-container{
+    margin: 10px;
+    margin-bottom:20px;
+}
+
+div.writing-right-container{
+    margin: 10px;
+    margin-bottom:20px;
+}
+
+
+
+/* Title, type, and description go on the left side of the project*/
+div.writing-title-text{
+    font-size:20px;
+}
+
+div.writing-type-text{
+    font-size: 16px;
+    color: var(--lightyellow);
+    font-style: italic;
+    margin-top: 2px;
+    margin-bottom:15px;
+    margin-left: 10px;
+}
+
+div.writing-desc-text{
+    font-size: 16px;
+    color:var(--lightyellow);
+    line-height:1.3;
+}
+
+
+/* Genre and Tools go on the right side of the project */
+
+div.writing-genre-container{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+div.writing-genre-label{
+    font-size: 18px;
+}
+
+div.writing-genre-text{
+    font-size: 16px;
+    color:var(--lightyellow);
+}
+
+
+/* 
+div.writing-tools-container{
+    margin-top: 10px;
+    margin-bottom: 40px; 
+} */
+
+div.writing-tools-label{
+    font-size: 18px;
+}
+
+div.writing-tools-text{
+    font-size: 16px;
+    color:var(--lightyellow);
+}
