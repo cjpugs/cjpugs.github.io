@@ -1,5 +1,6 @@
 let IDs = new Map();
 IDs.set("navlink-home", "index.html");
+IDs.set("navlink-games", "games.html");
 IDs.set("navlink-writing", "writing.html");
 IDs.set("navlink-about", "about.html");
 
@@ -45,7 +46,7 @@ document.querySelectorAll("a.fade-link").forEach(link => {
         // if they clicked on "View More Projects" at the bottom of the home page
         } else if (clicked === document.getElementById("view-more-projects-link")){
             console.log("projects selected via view more");
-            document.getElementById("navlink-projects").classList.add("navlink-selected");
+            document.getElementById("navlink-games").classList.add("navlink-selected");
         
 
         } else {
