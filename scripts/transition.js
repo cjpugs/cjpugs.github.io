@@ -47,6 +47,11 @@ document.querySelectorAll("a.fade-link").forEach(link => {
         } else if (clicked === document.getElementById("view-more-projects-link")){
             console.log("projects selected via view more");
             document.getElementById("navlink-games").classList.add("navlink-selected");
+
+        // if they clicked on "View More Writing" at the bottom of the home page
+        } else if (clicked === document.getElementById("view-more-writing-link")){
+            console.log("writing selected via view more");
+            document.getElementById("navlink-writing").classList.add("navlink-selected");
         
 
         } else {

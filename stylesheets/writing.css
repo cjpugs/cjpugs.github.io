@@ -71,8 +71,8 @@ div.writing-container{
     width: 500px;
     height: 200px;
 
-    display:grid;
-    grid-template-columns: 65% 2% 33%;
+    /* display:grid;
+    grid-template-columns: 65% 2% 33%; */
 
     margin-right: 10px;
     margin-left: 10px;
@@ -98,21 +98,18 @@ div.writing-vert-line{
     margin: auto;
 }
 
-div.writing-left-container{
+div.writing-content-container{
     margin: 10px;
-    margin-bottom:20px;
+    margin-bottom:0px;
 }
 
-div.writing-right-container{
-    margin: 10px;
-    margin-bottom:20px;
-}
 
 
 
 /* Title, type, and description go on the left side of the project*/
 div.writing-title-text{
-    font-size:20px;
+    padding-top: 10px;
+    font-size:24px;
 }
 
 div.writing-type-text{
@@ -134,31 +131,26 @@ div.writing-desc-text{
 /* Genre and Tools go on the right side of the project */
 
 div.writing-genre-container{
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    font-style: italic;
 }
 
 div.writing-genre-label{
     font-size: 18px;
+    display: inline;
 }
 
 div.writing-genre-text{
-    font-size: 16px;
-    color:var(--lightyellow);
-}
-
-
-/* 
-div.writing-tools-container{
-    margin-top: 10px;
-    margin-bottom: 40px; 
-} */
-
-div.writing-tools-label{
     font-size: 18px;
+    color:var(--lightyellow);
+    display: inline;
 }
 
-div.writing-tools-text{
-    font-size: 16px;
-    color:var(--lightyellow);
+
+
+div.writing-tag-container{
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
 }
