@@ -137,13 +137,15 @@ div.project-link{
 
 
     transform: scale(1) translateZ(0);
-    transition-property:transform;
+    transition-property:transform color border-color;
     transition-duration:0.2s;
-    will-change:transform
+    will-change:transform color border-color;
 }
 
 div.project-link:hover{
     transform: scale(1.02) translateZ(0);
+    color: var(--yellow);
+    border-color: var(--yellow);
 }
 
 
@@ -252,27 +254,42 @@ img.lof-pipeline{
     border-style: solid;
 }
 
-/* VIEW MORE CONTAINER (Copied from home.css) */
 div.view-more-container{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
 
+    display:flex;
+    justify-content: center;
+
     
 }
 
 a.view-more-link{
-    color:var(--yellow);
+    color:var(--lightyellow);
     text-decoration:none;
 
-    font-size:35px;
+    font-size:30px;
 
-    transition-property: color;
+    transform: scale(1) translateZ(0);
+    transition-property:transform color border-color;
     transition-duration:0.2s;
+    will-change:transform color border-color;
+
+    padding: 10px;
+    margin: 0px 20px;
+
+    background-color: var(--darkgreen);
+    border-radius: 15px;
+    border-width:4px;
+    border-color: var(--lightyellow);
+    border-style:solid;
 }
 
 a.view-more-link:hover{
-    color:var(--lightyellow);
+    transform:scale(1.02) translateZ(0);
+    color: var(--yellow);
+    border-color: var(--yellow);
 }
 
 
