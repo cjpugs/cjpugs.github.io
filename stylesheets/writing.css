@@ -61,7 +61,8 @@ div.writing-catalogue-container{
 }
 
 /* Wraps the entire project tab in a link to go somewhere else */
-a.writing-container-link{
+div.writing-container-link{
+    cursor:pointer;
     text-decoration: none;
     text-align:left;
 }
@@ -99,8 +100,52 @@ div.writing-vert-line{
 }
 
 div.writing-content-container{
+    padding-top:10px;
     margin: 10px;
     margin-bottom:0px;
+}
+
+
+a.ext-writing-link{
+    position:absolute;
+    top:4%;
+    right:1%;
+    text-decoration: none;
+}
+
+div.ext-writing-link-img-container{
+    aspect-ratio: 1/1;
+    margin-right:10px;
+    padding:3px;
+
+
+    background-color: var(--green);
+    border-radius: 10px;
+    border-color: var(--darkgreen);
+    border-width:4px;
+    border-style:solid;
+
+}
+
+img.wr-top-link-icon{
+    position: absolute;
+    left:7;
+    opacity: 0;
+
+    transition-property: opacity;
+    transition-duration: 0.1s;
+}
+img.wr-top-link-icon:hover{
+    opacity:1;
+}
+
+img.wr-bot-link-icon{
+    opacity:1;
+    transition-property: opacity;
+    transition-duration: 0.1s;
+}
+img.wr-bot-link-icon:hover{
+    opacity:0;
 }
 
 
@@ -108,7 +153,6 @@ div.writing-content-container{
 
 /* Title, type, and description go on the left side of the project*/
 div.writing-title-text{
-    padding-top: 10px;
     font-size:24px;
 }
 
