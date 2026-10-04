@@ -307,8 +307,9 @@ a.back-button-container{
     border-width:4px;
     border-style: solid;
 
-    transition-property:border-color;
-    transition-duration:0.01s;
+    transform: scale(1) translateZ(0);
+    transition-property: transform border-color;
+    transition-duration:0.2s;
 
     display:flex;
     align-items: center;
@@ -316,6 +317,7 @@ a.back-button-container{
 }
 
 a.back-button-container:hover{
+    transform: scale(1.02) translateZ(0);
     border-color:var(--yellow);
 }
 
