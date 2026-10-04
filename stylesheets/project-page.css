@@ -297,16 +297,34 @@ a.view-more-link:hover{
 /* Back button */
 
 a.back-button-container{
-    width:50px;
+    width:45px;
     aspect-ratio: 1/1;
     margin:10px;
     background-color: var(--green);
     
     border-radius: 15px;
+    border-color: var(--lightyellow);
+    border-width:4px;
+    border-style: solid;
+
+    transition-property:border-color;
+    transition-duration:0.01s;
 
     display:flex;
     align-items: center;
     justify-content: center;
+}
+
+a.back-button-container:hover{
+    border-color:var(--yellow);
+}
+
+a.back-button-container:hover .back-button-image-top{
+    opacity:1;
+}
+
+a.back-button-container:hover .back-button-image-bot{
+    opacity:0;
 }
 
 
@@ -329,13 +347,15 @@ img.back-button-image-top{
     opacity: 0;
 
     transition-property: opacity;
-    transition-duration: 0.1s;
+    transition-duration: 0.01s;
 }
 
-img.back-button-image-top:hover{
-    opacity:1;
-}
+img.back-button-image-bot{
+    transition-property:opacity;
+    transition-duration:0.01s;
 
+    opacity: 1;
+}
 
 div.project-header-container{
     display:grid;
