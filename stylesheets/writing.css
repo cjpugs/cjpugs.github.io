@@ -62,13 +62,13 @@ div.writing-catalogue-container{
 
 /* Wraps the entire project tab in a link to go somewhere else */
 div.writing-container-link{
-    cursor:pointer;
     text-decoration: none;
     text-align:left;
 }
 
 /* Contains all information regarding this single project tab*/
 div.writing-container{
+    cursor: pointer;
     width: 500px;
     height: 200px;
 
@@ -93,11 +93,6 @@ div.writing-container:hover{
     transform: scale(1.02) translateZ(0);
 }
 
-div.writing-vert-line{
-    border-left: 3px solid var(--lightyellow);
-    height: 80%;
-    margin: auto;
-}
 
 div.writing-content-container{
     padding-top:10px;
@@ -121,9 +116,16 @@ div.ext-writing-link-img-container{
 
     background-color: var(--green);
     border-radius: 10px;
-    border-color: var(--darkgreen);
+    border-color: var(--lightyellow);
     border-width:4px;
     border-style:solid;
+
+    transition-property: border-color;
+    transition-duration: 0.01s;
+
+}
+div.ext-writing-link-img-container:hover{
+    border-color: var(--yellow);
 
 }
 
@@ -133,20 +135,25 @@ img.wr-top-link-icon{
     opacity: 0;
 
     transition-property: opacity;
-    transition-duration: 0.1s;
-}
-img.wr-top-link-icon:hover{
-    opacity:1;
+    transition-duration: 0.01s;
 }
 
 img.wr-bot-link-icon{
     opacity:1;
     transition-property: opacity;
-    transition-duration: 0.1s;
+    transition-duration: 0.01s;
 }
-img.wr-bot-link-icon:hover{
+
+/* These two pieces here say ".parent:hover .child{ do something }"
+Essentially, when "ext-writing-link-img-container" is being hovered on, any children with the associated class do the following */
+div.ext-writing-link-img-container:hover .wr-top-link-icon{
+    opacity:1;
+}
+div.ext-writing-link-img-container:hover .wr-bot-link-icon{
     opacity:0;
 }
+
+
 
 
 
